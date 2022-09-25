@@ -1,0 +1,61 @@
+html
+{
+    font-size: $baseFontSize;
+
+    overflow: scroll !important;
+
+    box-sizing: border-box;
+
+    background-color: $color-background;
+}
+
+*,
+*::after,
+*::before
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    font-family: $font-oswald;
+    font-weight: $fontweight-light;
+    line-height: 1.75;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 100% !important;
+    margin: 0;
+    color: $color-text;
+    background-color: $color-background;
+}
+
+.default-content
+{
+    @include layoutWideContent();
+}
+
+p img
+{
+    width: 100%;
+    height: auto;
+}
+
+.black-heading-with-text
+{
+    .paragraph
+    {
+        p:empty
+        {
+            display: none;
+        }
+    }
+}
+
+.text-block--paragraph
+{
+    figcaption
+    {
+        font-size: 12px;
+    }
+}

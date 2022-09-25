@@ -1,0 +1,98 @@
+// sass settings and variables
+$width-xs: 330px;
+$width-s: 600px;
+$width-m: 800px;
+$width-l: 1100px;
+$width-xl: 1400px;
+$width-max: 1600px;
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Oswald:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:800|Open+Sans:400,700&display=swap');
+$font-oswald: 'Oswald', sans-serif;
+$font-merriWeather: 'Merriweather', sans-serif;
+$font-openSans: 'Open Sands', sans-serif;
+$font-libreFranklin: 'Libre Franklin', sans-serif;
+$font-franklinCompBold: 'FranklinCompressedBold', sans-serif;
+
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=4789e684-61ec-4731-a13e-6e85c22f700d&fontids=5802668");
+@font-face{
+    font-family:"FranklinCompressedBold";
+    src:url("fonts/5802668/3de87d95-f9bc-485a-a18e-589463ef4227.eot?#iefix");
+    src:url("/fonts/FranklinCompITCPro-Bold.otf?#iefix");
+    src:url("fonts/5802668/3de87d95-f9bc-485a-a18e-589463ef4227.eot?#iefix") 
+    format("eot"),url("fonts/5802668/8c40dcde-2956-41e4-8f7f-f658276e23eb.woff2") 
+    format("woff2"),url("fonts/5802668/18d2834c-5515-4d8d-bdb9-7ee8b59f941d.woff") 
+    format("woff"),url("fonts/5802668/6c8a0443-616f-4d8f-b24e-2f57b3771b29.ttf") format("truetype");
+}
+
+$fontweight-light: 300;
+$fontweight-regular: 400;
+$fontweight-bold: 500;
+$fontweight-black: 600;
+
+// raw colors
+$color-white: #fff;
+$color-black: #000;
+$color-charcoal: #333;
+$color-red: #cb6b4f;
+$color-darkred: #b3573c;
+$color-navy: #282561;
+$color-lightGrey: #e6e6e6;
+$color-grey: #4d4d4d;
+$color-yellow: #e8ed6a;
+$color-orange: #ff8555;
+$color-magenta: #c277d0;
+$color-blue: #171ee8;
+$color-darkblue: #438ea2;
+$color-green: #4fcb78;
+$color-purple: #8b87e3;
+$color-alto: #c9c9c9;
+
+//lift colors
+$lift-off-black: #1e1e1e;
+$lift-white: #ffffff;
+$lift-blue: #0000e8;
+$lift-red: #eb574d;
+$lift-orange: #fcb521;
+$lift-aqua: #52d4e0;
+$lift-natural: #f7f0ea;
+$lift-lightGrey: #e6e6e6;
+$lift-grey: #4d4d4d;
+
+// semantic colors
+$color-background: $color-white;
+$color-text: $color-navy;
+
+// layout variables
+$baseFontSize: 24px;
+$baseParagraphMargin: 1.3333em;
+$sidePaddingMax: 2rem;
+$wideInnerWidth: 1188px;
+$readingInnerWidth: 792px;
+
+// bg color classes 
+.bg-natural {
+    background-color: $lift-natural;
+}
+
+.bg-white {
+    background-color: $lift-white;
+}
+
+.bg-blue {
+    background-color: $lift-blue;
+}
+
+.bg-red {
+    background-color: $lift-red;
+}
+
+.bg-orange {
+    background-color: $lift-orange;
+}
+
+.bg-aqua {
+    background-color: $lift-aqua;
+}
+

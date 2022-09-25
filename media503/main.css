@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Oswald:300,400,500,600");
+/* =========== Key frames =========== */
+@-webkit-keyframes fadingleft {
+  from {
+    opacity: 0;
+    left: -20%;
+  }
+  to {
+    opacity: 1;
+    left: 0%;
+  }
+}
+@keyframes fadingleft {
+  from {
+    opacity: 0;
+    left: -20%;
+  }
+  to {
+    opacity: 1;
+    left: 0%;
+  }
+}
+
+@-webkit-keyframes fadingright {
+  from {
+    opacity: 0;
+    right: -20%;
+  }
+  to {
+    opacity: 1;
+    right: 0%;
+  }
+}
+
+@keyframes fadingright {
+  from {
+    opacity: 0;
+    right: -20%;
+  }
+  to {
+    opacity: 1;
+    right: 0%;
+  }
+}
+
+@-webkit-keyframes fadingup {
+  from {
+    opacity: 0;
+    bottom: -20%;
+  }
+  to {
+    opacity: 1;
+    bottom: 0%;
+  }
+}
+
+@keyframes fadingup {
+  from {
+    opacity: 0;
+    bottom: -20%;
+  }
+  to {
+    opacity: 1;
+    bottom: 0%;
+  }
+}
+
+/* =========== Animations =============== */
+.leftanimation {
+  opacity: 0;
+  position: relative;
+  -webkit-animation: fadingleft ease-in 1s;
+  animation: fadingleft ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.leftanimation.one {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.rightanimation {
+  opacity: 0;
+  position: relative;
+  -webkit-animation: fadingright ease-in 1s;
+  animation: fadingright ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.rightanimation.one {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.upanimation {
+  opacity: 0;
+  position: relative;
+  -webkit-animation: fadingup ease-in 1s;
+  animation: fadingup ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.upanimation.one {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 24px;
+  background-color: #fff;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin-top: 79px;
+  line-height: 1.75;
+  font-family: "Oswald", sans-serif;
+  color: #282561;
+  font-weight: 300;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 68px;
+  margin-bottom: 50px;
+  line-height: 80px;
+  font-weight: 600;
+  color: #282561;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 56px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  color: #282561;
+  margin-bottom: 32px;
+  margin-top: 70px;
+}
+
+p {
+  margin: 1.3333em 0;
+  color: #282561;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 42px;
+}
+
+a {
+  color: #cb6b4f;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+.paragraphType-image-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.paragraphType-image-caption img {
+  border-radius: 10px;
+}
+
+.paragraphType-image-caption .fieldName-field-caption {
+  color: #4d4d4d;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+blockquote p {
+  color: #282561;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: oblique;
+}
+
+i {
+  font-style: italic;
+}
+
+small {
+  font-size: 0.8em;
+}
+
+big {
+  font-size: 1.2em;
+}
+
+dl dt {
+  font-weight: 600;
+}
+
+abbr {
+  text-transform: uppercase;
+}
+
+.caption > figcaption {
+  color: #4d4d4d;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.node-content ul li {
+  list-style: none;
+  color: #282561;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 42px;
+}
+
+.node-content ul li:before {
+  color: #cb6b4f;
+  content: '\2022';
+  font-size: 60px;
+  padding-right: 10px;
+  position: relative;
+  top: 15px;
+}
+
+.node-content ol li {
+  color: #282561;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 42px;
+}
+
+body {
+  background-color: white;
+}
+
+/*# sourceMappingURL=sourcemaps/main.css.map */

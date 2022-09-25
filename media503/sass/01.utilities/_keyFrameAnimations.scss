@@ -1,0 +1,72 @@
+/* =========== Key frames =========== */
+@keyframes fadingleft {
+  from {
+    opacity: 0;
+    left: -20%;
+  }
+  to {
+    opacity: 1;
+    left: 0%;   
+  }
+}
+
+@keyframes fadingright {
+  from {
+    opacity: 0;
+    right: -20%;
+  }
+  to {
+    opacity: 1;
+    right: 0%;   
+  }
+}
+
+@keyframes fadingup {
+  from {
+    opacity: 0;
+    bottom: -20%;
+  }
+  to {
+    opacity: 1;
+    bottom: 0%;   
+  }
+}
+
+
+/* =========== Animations =============== */
+
+.leftanimation {
+  opacity: 0;
+  position: relative;
+  animation: fadingleft ease-in 1s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.leftanimation.one {
+  animation-delay: 0.5s
+}
+
+.rightanimation {
+  opacity: 0;
+  position: relative;
+  animation: fadingright ease-in 1s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.rightanimation.one {
+  animation-delay: 1s
+}
+
+.upanimation {
+  opacity: 0;
+  position: relative;
+  animation: fadingup ease-in 1s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.upanimation.one {
+  animation-delay: 1.5s
+}
