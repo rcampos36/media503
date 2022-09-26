@@ -74,9 +74,6 @@
 			?>
 		</nav><!-- #site-navigation -->
 
-		<!-- Right Navigation -->
-		<?php get_template_part('blocks/right-nav', 'block'); ?>
-
 		<a href="#" class="dc-menu-trigger"><span>Menu</span></a>
 
 	</header><!-- #masthead -->
@@ -102,20 +99,6 @@
 			</nav><!-- #site-navigation -->
 		</div>
 	</div>
-
-	<div class="hero" style="background-image: url(<?php header_image(); ?>)" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="">
-			<!-- <div class="hero-content--bg-image--wrapper">
-				<div class="hero-content--bg-image--content" style="background-image: url(<?php header_image(); ?>)" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt=""> </div>
-			</div> -->
-
-			<div class="hero-content">
-				<!-- <div class="hero-content--sub-title"><p><?php the_field('hero_sub_title')?></p></div>-->
-				<div class="hero-content--paragraph"><p><?php the_field('hero_paragraph')?></p></div> 
-				<div class="hero-content--title"><h2><?php the_field('hero_title')?></h2></div>
-			</div>
-			<?php echo do_shortcode("[qcld_hero id=2]"); ?>
-			
-	</div><!--- #site-hero --->
 
 
 	<div id="content" class="site-content">
